@@ -1,32 +1,34 @@
 {
   "expo": {
-    "name": "rn-calculator",
-    "slug": "rn-calculator",
+    "name": "Calc App",
+    "slug": "nad-calculator",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Calc.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/calc-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0088CC"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dumbways.calcapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "com.dumbways.calcapp",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/Calc.png",
+        "backgroundColor": "#0088CC"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Calc.png"
     }
   }
 }
