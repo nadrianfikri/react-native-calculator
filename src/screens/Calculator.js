@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import navitebase comp
-import { Box, Text, Heading, VStack, FlatList } from 'native-base';
+import { Box, Text, VStack, FlatList } from 'native-base';
 
 // import component
 import { NumButton, EqualButton, OptButton } from '../components/Button';
@@ -65,7 +65,7 @@ const Calculator = () => {
 
       <FlatList
         data={buttons}
-        keyExtractor={(index) => index}
+        keyExtractor={(item) => item.id}
         numColumns={4}
         renderItem={({ item }) =>
           item === 'C' || item === '%' || item === '+' || item === '-' || item === '*' || item === '/' || item === 'Del' ? (
